@@ -1,0 +1,97 @@
+/* progress.css - 진행현황 전용 스타일 */
+.progress-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.progress-timeline::before {
+    content: '';
+    position: absolute;
+    left: 120px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e0e0e0;
+}
+.timeline-item {
+    display: flex;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.timeline-date {
+    width: 100px;
+    text-align: right;
+    padding-right: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    position: relative;
+}
+.timeline-date::after {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #e0e0e0;
+}
+.timeline-item.completed .timeline-date::after {
+    background: #27ae60;
+}
+.timeline-item.active .timeline-date::after {
+    background: #667eea;
+    box-shadow: 0 0 4px rgba(102, 126, 234, 0.2);
+}
+.timeline-content {
+    flex: 1;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    margin-left: 2rem;
+}
+.timeline-content h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+.timeline-content p {
+    color: #7f8c8d;
+    margin-bottom: 1em;
+}
+.timeline-details {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+.timeline-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.timeline-details li {
+    color: #7f8c8d;
+    padding: 0.3rem 0;
+    font-size: 0.9rem;
+}
+.timeline-details li:before {
+    content: '✓';
+    color: #27ae60;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+} 
