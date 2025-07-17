@@ -4,6 +4,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 .container {
@@ -19,6 +20,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 10 rgba(0,0,0,0.1);
 }
 
 .header .container {
@@ -44,7 +46,7 @@ body {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
     padding: 8px 16px;
     border-radius: 20px;
 }
@@ -60,6 +62,17 @@ body {
     padding: 4rem 0;
 }
 
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
 .section {
     padding: 4rem 0;
 }
@@ -70,6 +83,466 @@ body {
     margin-bottom: 3rem;
     color: #2c3e50;
     font-weight: 700;
+}
+
+/* ==================== 대시보드 스타일 ==================== */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1r));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.dashboard-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20 rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.dashboard-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.dashboard-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.dashboard-card p {
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.dashboard-link {
+    display: inline-block;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.dashboard-link:hover {
+    color: #764ba2;
+}
+
+/* ==================== 과제소개 스타일 ==================== */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1r));
+    gap: 2rem;
+    margin-top:2;
+}
+
+.project-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20 rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.project-period {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom:1;
+}
+
+.project-description {
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.project-details {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.project-details h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size:1rem;
+}
+
+.project-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-details li {
+    color: #7f8c8d;
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+.project-details li:before {
+    content:•;
+    color: #667eea;
+    font-weight: bold;
+    margin-right: 0.5;
+}
+
+.project-status {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.project-status.active {
+    background-color: #e8f5e8;
+    color: #27ae60;
+}
+
+.project-status.planning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* ==================== 연구팀 스타일 ==================== */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px,1r));
+    gap: 3rem;
+}
+
+.team-category h3 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.member-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 15 rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateX(5px);
+}
+
+.member-avatar {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius:50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 1.5rem;
+}
+
+.member-info h4 {
+    color: #2c3e50;
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.member-role {
+    color: #667eea;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.member-expertise {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.member-contact {
+    color: #667eea;
+    font-size: 0.9rem;
+    margin-bottom: 0.5em;
+}
+
+.member-bio {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+/* ==================== 진행현황 스타일 ==================== */
+.progress-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.progress-timeline::before {
+    content: '';
+    position: absolute;
+    left: 120px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e0e0e0;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-date {
+    width: 100px;
+    text-align: right;
+    padding-right: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    position: relative;
+}
+
+.timeline-date::after {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #e0e0e0;
+}
+
+.timeline-item.completed .timeline-date::after {
+    background: #27ae60;
+}
+
+.timeline-item.active .timeline-date::after {
+    background: #667eea;
+    box-shadow: 0 0 4px rgba(102, 126, 234, 0.2);
+}
+
+.timeline-content {
+    flex: 1;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 15 rgba(0,0,0,0.1);
+    margin-left: 2rem;
+}
+
+.timeline-content h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    color: #7f8c8d;
+    margin-bottom: 1em;
+}
+
+.timeline-details {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.timeline-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-details li {
+    color: #7f8c8d;
+    padding: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+.timeline-details li:before {
+    content: '✓';
+    color: #27ae60;
+    font-weight: bold;
+    margin-right: 0.5;
+}
+
+.progress-bar {
+    width: 10%;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* ==================== 성과물 스타일 ==================== */
+.deliverables-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1r));
+    gap:2rem;
+}
+
+.deliverable-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20 rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.deliverable-card:hover {
+    transform: translateY(-5px);
+}
+
+.deliverable-icon {
+    font-size: 3rem;
+    margin-bottom:1rem;
+}
+
+.deliverable-card h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.deliverable-card p {
+    color: #7f8c8d;
+    margin-bottom: 1.05rem;
+}
+
+.deliverable-details {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.deliverable-details p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.deliverable-details strong {
+    color: #2c3e50;
+}
+
+.deliverable-status {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.deliverable-card.completed .deliverable-status {
+    background-color: #e8f5e8;
+    color: #27ae60;
+}
+
+.deliverable-card.in-progress .deliverable-status {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.deliverable-card.planned .deliverable-status {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.deliverable-date {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* ==================== 애니메이션 ==================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card,
+.member-card,
+.timeline-item,
+.deliverable-card,
+.dashboard-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* ==================== 스크롤 버튼 ==================== */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 15 rgba(0,0,0,0.2);
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20 rgba(0,0,0,0.3);
 }
 
 .footer {
