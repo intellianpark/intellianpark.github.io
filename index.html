@@ -13,10 +13,11 @@
             <h1 class="logo">연구과제 관리 블로그</h1>
             <nav class="nav">
                 <ul>
-                    <li><a href="#projects">과제소개</a></li>
-                    <li><a href="#team">연구팀</a></li>
-                    <li><a href="#progress">진행현황</a></li>
-                    <li><a href="#deliverables">성과물</a></li>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="projects.html">과제소개</a></li>
+                    <li><a href="team.html">연구팀</a></li>
+                    <li><a href="progress.html">진행현황</a></li>
+                    <li><a href="deliverables.html">성과물</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,197 +31,36 @@
             </div>
         </section>
 
-        <!-- ===================== 과제소개 SECTION ===================== -->
-        <section id="projects" class="section">
+        <section class="section">
             <div class="container">
-                <h2 class="section-title">과제소개</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <h3>AI 기반 스마트 팩토리 시스템 개발</h3>
-                        <p class="project-period">2024.01 ~ 2024.12</p>
-                        <p class="project-description">
-                            제조업의 디지털 전환을 위한 AI 기반 스마트 팩토리 시스템을 개발합니다. 
-                            실시간 데이터 분석과 예측 모델링을 통해 생산성 향상과 비용 절감을 목표로 합니다.
-                        </p>
-                        <div class="project-status active">진행중</div>
+                <h2 class="section-title">메인 대시보드</h2>
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <div class="dashboard-icon">📋</div>
+                        <h3>과제소개</h3>
+                        <p>현재 진행 중인 연구과제들의 상세 정보를 확인하세요.</p>
+                        <a href="projects.html" class="dashboard-link">자세히 보기 →</a>
                     </div>
                     
-                    <div class="project-card">
-                        <h3>블록체인 기반 공급망 관리 시스템</h3>
-                        <p class="project-period">2024.03 ~ 2025.02</p>
-                        <p class="project-description">
-                            블록체인 기술을 활용한 투명하고 안전한 공급망 관리 시스템을 구축합니다.
-                            제품의 이력 추적과 품질 관리를 통합적으로 제공합니다.
-                        </p>
-                        <div class="project-status planning">기획단계</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===================== 연구팀 SECTION ===================== -->
-        <section id="team" class="section">
-            <div class="container">
-                <h2 class="section-title">연구팀 소개</h2>
-                <div class="team-grid">
-                    <div class="team-category">
-                        <h3>연구자</h3>
-                        <div class="member-list">
-                            <div class="member-card">
-                                <div class="member-avatar">김</div>
-                                <div class="member-info">
-                                    <h4>김연구</h4>
-                                    <p class="member-role">프로젝트 리더</p>
-                                    <p class="member-expertise">AI/ML, 시스템 아키텍처</p>
-                                </div>
-                            </div>
-                            <div class="member-card">
-                                <div class="member-avatar">이</div>
-                                <div class="member-info">
-                                    <h4>이개발</h4>
-                                    <p class="member-role">시니어 개발자</p>
-                                    <p class="member-expertise">백엔드 개발, 데이터베이스</p>
-                                </div>
-                            </div>
-                            <div class="member-card">
-                                <div class="member-avatar">박</div>
-                                <div class="member-info">
-                                    <h4>박분석</h4>
-                                    <p class="member-role">데이터 분석가</p>
-                                    <p class="member-expertise">데이터 분석, 통계 모델링</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="dashboard-card">
+                        <div class="dashboard-icon">👥</div>
+                        <h3>연구팀</h3>
+                        <p>연구자와 발주자 정보를 확인하세요.</p>
+                        <a href="team.html" class="dashboard-link">자세히 보기 →</a>
                     </div>
                     
-                    <div class="team-category">
-                        <h3>발주자</h3>
-                        <div class="member-list">
-                            <div class="member-card">
-                                <div class="member-avatar">한</div>
-                                <div class="member-info">
-                                    <h4>한기업</h4>
-                                    <p class="member-role">기술이사</p>
-                                    <p class="member-expertise">제조업 디지털 전환</p>
-                                </div>
-                            </div>
-                            <div class="member-card">
-                                <div class="member-avatar">정</div>
-                                <div class="member-info">
-                                    <h4>정관리</h4>
-                                    <p class="member-role">프로젝트 매니저</p>
-                                    <p class="member-expertise">프로젝트 관리, 품질관리</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===================== 진행현황 SECTION ===================== -->
-        <section id="progress" class="section">
-            <div class="container">
-                <h2 class="section-title">연구 진행 현황</h2>
-                <div class="progress-timeline">
-                    <div class="timeline-item completed">
-                        <div class="timeline-date">2024.01</div>
-                        <div class="timeline-content">
-                            <h4>프로젝트 킥오프</h4>
-                            <p>프로젝트 계획 수립 및 팀 구성 완료</p>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 100%"></div>
-                            </div>
-                        </div>
+                    <div class="dashboard-card">
+                        <div class="dashboard-icon">📈</div>
+                        <h3>진행현황</h3>
+                        <p>연구 진행 상황과 타임라인을 확인하세요.</p>
+                        <a href="progress.html" class="dashboard-link">자세히 보기 →</a>
                     </div>
                     
-                    <div class="timeline-item completed">
-                        <div class="timeline-date">2024.02</div>
-                        <div class="timeline-content">
-                            <h4>요구사항 분석</h4>
-                            <p>고객 요구사항 수집 및 분석 완료</p>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 100%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item active">
-                        <div class="timeline-date">2024.03</div>
-                        <div class="timeline-content">
-                            <h4>시스템 설계</h4>
-                            <p>아키텍처 설계 및 기술 스택 선정</p>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-date">2024.04</div>
-                        <div class="timeline-content">
-                            <h4>개발 시작</h4>
-                            <p>핵심 모듈 개발 및 테스트</p>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 0%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===================== 성과물 SECTION ===================== -->
-        <section id="deliverables" class="section">
-            <div class="container">
-                <h2 class="section-title">성과물 현황</h2>
-                <div class="deliverables-grid">
-                    <div class="deliverable-card completed">
-                        <div class="deliverable-icon">📋</div>
-                        <h4>프로젝트 계획서</h4>
-                        <p>상세한 프로젝트 계획 및 일정</p>
-                        <div class="deliverable-status">완료</div>
-                        <div class="deliverable-date">2024.01.15</div>
-                    </div>
-                    
-                    <div class="deliverable-card completed">
-                        <div class="deliverable-icon">📊</div>
-                        <h4>요구사항 명세서</h4>
-                        <p>시스템 요구사항 및 기능 명세</p>
-                        <div class="deliverable-status">완료</div>
-                        <div class="deliverable-date">2024.02.28</div>
-                    </div>
-                    
-                    <div class="deliverable-card in-progress">
-                        <div class="deliverable-icon">🏗️</div>
-                        <h4>시스템 아키텍처 설계서</h4>
-                        <p>전체 시스템 구조 및 기술 설계</p>
-                        <div class="deliverable-status">진행중</div>
-                        <div class="deliverable-date">2024.03.31 예정</div>
-                    </div>
-                    
-                    <div class="deliverable-card planned">
-                        <div class="deliverable-icon">💻</div>
-                        <h4>프로토타입 시스템</h4>
-                        <p>핵심 기능 구현된 프로토타입</p>
-                        <div class="deliverable-status">예정</div>
-                        <div class="deliverable-date">2024.06.30 예정</div>
-                    </div>
-                    
-                    <div class="deliverable-card planned">
-                        <div class="deliverable-icon">📚</div>
-                        <h4>기술 문서</h4>
-                        <p>API 문서 및 사용자 매뉴얼</p>
-                        <div class="deliverable-status">예정</div>
-                        <div class="deliverable-date">2024.11.30 예정</div>
-                    </div>
-                    
-                    <div class="deliverable-card planned">
-                        <div class="deliverable-icon">🚀</div>
-                        <h4>최종 시스템</h4>
-                        <p>완성된 시스템 및 배포</p>
-                        <div class="deliverable-status">예정</div>
-                        <div class="deliverable-date">2024.12.31 예정</div>
+                    <div class="dashboard-card">
+                        <div class="dashboard-icon">📦</div>
+                        <h3>성과물</h3>
+                        <p>완료된 성과물과 예정된 성과물을 확인하세요.</p>
+                        <a href="deliverables.html" class="dashboard-link">자세히 보기 →</a>
                     </div>
                 </div>
             </div>
